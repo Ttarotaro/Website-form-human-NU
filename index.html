@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ฟอร์มขอรับการสนับสนุนทุน</title>
+<style>
+  body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #FF7A00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    margin: 30px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    color: #FF7A00;
+    border-bottom: 2px solid #FFB366;
+    padding-bottom: 5px;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+  }
+
+  .form-section {
+    margin-top: 30px;
+  }
+
+  .btn-submit {
+    background-color: #FF7A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .btn-submit:hover {
+    background-color: #e86d00;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #FFB366;
+    color: #333;
+  }
+
+  .checklist input {
+    margin-right: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>ฟอร์มขอรับการสนับสนุนทุน</header>
+
+<div class="container">
+  <h2>ข้อมูลส่วนตัว</h2>
+  <label>ชื่อ-นามสกุล</label>
+  <input type="text">
+
+  <label>สังกัด</label>
+  <input type="text">
+
+  <label>ที่อยู่</label>
+  <textarea rows="2"></textarea>
+
+  <div class="form-section">
+    <h2>ส่วนราชการ</h2>
+    <label>คณะ/หน่วยงาน</label>
+    <input type="text">
+    <label>โทรศัพท์</label>
+    <input type="text">
+  </div>
+
+  <div class="form-section">
+    <h2>ข้อมูลเอกสารที่ยื่น</h2>
+    <label>ชื่อเอกสาร</label>
+    <input type="text">
+    <label>ประเภทเอกสาร</label>
+    <select>
+      <option>รายงานการวิจัย</option>
+      <option>บทความวิชาการ</option>
+    </select>
+  </div>
+
+  <div class="form-section">
+    <h2>ใบหลักฐานการรับเงิน</h2>
+    <label>ทุนที่ขอรับ</label>
+    <select>
+      <option>ทุนวิจัย</option>
+      <option>ทุนอื่น ๆ</option>
+    </select>
+  </div>
+
+  <div class="form-section">
+    <h2>รายการตรวจสอบ</h2>
+    <table>
+      <tr><th>✓</th><th>รายการ</th></tr>
+      <tr><td><input type="checkbox"></td><td>แผนโครงการคณะมนุษยศาสตร์ฯ</td></tr>
+      <tr><td><input type="checkbox"></td><td>เอกสารยืนยันการตีพิมพ์</td></tr>
+      <tr><td><input type="checkbox"></td><td>เอกสารคำรับรองอาจารย์ที่ปรึกษา</td></tr>
+    </table>
+  </div>
+
+  <button class="btn-submit">ส่งแบบฟอร์ม</button>
+</div>
+
+</body>
+</html>
